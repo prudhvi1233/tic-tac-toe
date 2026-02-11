@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe - AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="screen active">
+        <div class="welcome-container">
+            <h1 class="welcome-title">Welcome to the Tic Tac Toe Game</h1>
+            <div class="game-mode-buttons">
+                <button id="ai-mode-btn" class="mode-btn">Play with AI</button>
+                <button id="multiplayer-btn" class="mode-btn">Multiplayer</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Player Name Form Screen -->
+    <div id="form-screen" class="screen">
+        <div class="form-container">
+            <h2 id="form-title" class="form-title">Enter Player Name</h2>
+            <form id="player-form">
+                <div id="player1-input" class="input-group">
+                    <label for="player1-name">Player 1 Name:</label>
+                    <input type="text" id="player1-name" placeholder="Enter your name" required>
+                </div>
+                <div id="player2-input" class="input-group" style="display: none;">
+                    <label for="player2-name">Player 2 Name:</label>
+                    <input type="text" id="player2-name" placeholder="Enter player 2 name" required>
+                </div>
+                <button type="submit" class="start-btn">Start Game</button>
+            </form>
+            <button id="back-btn" class="back-btn">Back</button>
+        </div>
+    </div>
+    
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <div class="game-container">
+            <h1>Tic Tac Toe</h1>
+            <div id="board" class="board"></div>
+            <h2 id="status"></h2>
+            <button id="restart-btn">Restart Game</button>
+            <button id="home-btn">Home</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <div class="watermark">Created by Nandini</div>
+</body>
+</html>
